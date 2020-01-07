@@ -1,0 +1,194 @@
+.rush-to-buy-wrap{
+  padding: 20px;
+  .ant-table-tbody > tr > td {
+    padding: 0;
+  }
+  .goods-search-area{
+    padding-bottom: 20px;
+    background-color: @area-bg;
+    overflow: hidden;
+    .search-row{
+      display: flex;
+      margin-top: 20px;
+      .search-item{
+        display: flex;
+        align-items: center;
+        .item-tit{
+          width: 125px;
+          text-align: center;
+        }
+        .item-ipt{
+          width: 200px;
+        }
+        .item-btn{
+          width: 82px;
+          border-radius: 14px;
+        }
+        .goods-picker{
+          width: 350px;
+        }
+        .ant-calendar-range-picker-input{
+          letter-spacing: -0.2px;
+        }
+        .ant-calendar-picker-input{
+          padding: 4px 2px;
+        }
+      }
+    }
+  }
+
+  .tab-wrap{
+    .tab-head{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      margin: 20px 0;
+      border-bottom: 1px solid #eeeeee;
+      .head-left{
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        .time-item{
+          padding: 0 18px;
+          font-size: 12px;
+          .week-time{
+            color: #4C4C4C;
+          }
+          .status{
+            text-align: center;
+            .btn{
+              display: inline-block;
+              padding: 0 10px;
+              height: 18px;
+              margin-top: 10px;
+              line-height: 16px;
+              text-align: center;
+              border-radius: 10px;
+              color: #7F7F7F;
+              border: 1px solid rgba(151,151,151,1);
+            }
+          }
+          &.active{
+            position: relative;
+            .week-time{
+              color: @primary-color;
+            }
+            .status{
+              .btn{
+                color: #ffffff;
+                background-color: @primary-color;
+                border-color: @primary-color;
+              }
+            }
+          }
+          &.cur{
+            position: relative;
+            &:after{
+              content: '';
+              position: absolute;
+              bottom: -11px;
+              left: 24px;
+              width: 68px;
+              height: 2px;
+              background-color: @primary-color;
+            }
+          }
+        }
+      }
+      .head-right{
+        .item-btn{
+          color: #ffffff;
+          border-color: rgba(250,127,50,1);
+          border-radius: 14px;
+          background-color: rgba(250,127,50,1);
+          &.sec{
+            margin: 0 20px;
+          }
+          &.xlsx{
+            position: relative;
+            span{
+              cursor: pointer;
+            }
+            .file-ipt{
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              z-index: 2;
+              width: 100%;
+              opacity: 0;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .main-img{
+      display: block;
+      width: 60px;
+      height: 60px;
+      cursor: url('https://cdn1.showjoy.com/shop/images/20190614/O92WUPIL5DBY5OUFFNXG1560490633350.png'), auto;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+    .line-two{
+      width: 176px;
+      display: -webkit-box;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      -webkit-line-clamp: 2;
+      /*! autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+    }
+    .font-12{
+      font-size: 12px;
+      .price-pre{
+        color: #b2b2b2;
+      }
+    }
+    .arrow{
+      width: 11px;
+      height: 17px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .count{
+    padding: 20px 0;
+    font-size: 16px;
+    .high{
+      color: @primary-color;
+    }
+  }
+}
+.data-wrap{
+  padding: 20px;
+}
+.confirm-btns{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 10px;
+  .btn-right{
+    margin-left: 40px;
+  }
+}
+
+.tb-row {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-top-color: #EAEAEA;
+  border-top-style: solid;
+  border-top-width: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

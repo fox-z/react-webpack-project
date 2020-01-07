@@ -1,0 +1,122 @@
+.ad-background-wrap{
+  padding: 20px;
+  .ad-tab {
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #4C4C4C;
+  }
+  .ad-item-bg { 
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 1px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .ad-right-btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+      height: 200px;
+      .ad-icon {
+        margin: 10px;
+      }
+    }
+  }
+  .ad-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    .img-row {
+      width: 367px;
+      height: 154px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #FAFAFA;
+      .preview-img {            
+        max-height: 100px;
+        overflow: hidden;
+      }
+    }
+    .ad-input-wrap {
+      margin-left: 10px;
+      background-color:#FAFAFA;
+      display: flex;
+      flex-direction: column;
+      border-radius: 4px;
+      height: 154px;
+      width: 600px;
+      .ad-picker-box {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .ad-picker-title {
+          margin-left: 10px;
+          color: #4C4C4C;
+          font-size: 14px;
+        }
+        .ad-picker {
+          margin-left: 10px;
+        }
+      }
+      .ad-input-box {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .ad-input-title {
+          margin-left: 10px;
+          color: #4C4C4C;
+          font-size: 14px;
+        }
+        .ad-input {
+          margin-left: 10px;
+          width: 480px;
+          color: #1A1210;
+          font-size: 14px;
+        }
+      }
+    }
+    .ad-bottom-btns {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      height: 68px;
+      .ad-btn {
+        margin-left: 12px;
+        width: 86px;
+        height: 28px;
+        font-size: 14px;
+      }
+    }
+  }
+  .ad-add {
+    width: 86px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+.preview-box {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  .preview-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);  
+  }
+}

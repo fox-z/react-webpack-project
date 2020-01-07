@@ -1,0 +1,97 @@
+.user-info-title{
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #eeeeee;
+  .title-desc{
+    font-weight: normal;
+    font-size: 14px;
+    color: @text-color;
+  }
+  &.first{
+    margin-top: 0;
+  }
+}
+.user-info-ipt{
+  padding-left: 70px;
+  &:last-child{
+    margin-bottom: 82px;
+  }
+  .ipt-item{
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+    .ipt-item-left{
+      position: relative;
+      width: 80px;
+      margin-right: 28px;
+      padding-left: 10px;
+      text-align: left;
+      color: @text-color;
+      .require-star{
+        position: absolute;
+        top: 2px;
+        left: 0;
+        color: @primary-color;
+      }
+    }
+    .ipt-item-right{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: @heading-color;
+      .user-avator{
+        .personal-img{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: #166AB1;
+        }
+      }
+      .access-wrap{
+        width: 480px;
+        word-break: keep-all;
+        height: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .access-cert-wrap{
+        word-break: keep-all;
+        height: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .access-item{
+        margin-right: 27px;
+        font-size: 14px;
+        color: @heading-color;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .view-all-supplier{
+        height: 28px;
+        line-height: 26px;
+        color: @edit-color;
+        border-color: @edit-color;
+      }
+    }
+  }
+}
+
+.supplier-modal-content{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  .supplier-item{
+    width: 20%;
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    color: @heading-color;
+  }
+}

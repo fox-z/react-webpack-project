@@ -1,0 +1,52 @@
+.market-order-wrap{
+  .search-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    .search-left{
+      display: flex;
+      flex-wrap: wrap;
+      width: 622px;
+      padding-bottom: 20px;
+      background-color: @area-bg;
+      .search-item{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .item-tit{
+          width: 90px;
+          text-align: center;
+        }
+        .item-ipt{
+          width: 180px;
+        }
+        &.sec{
+          margin-left: 30px;
+        }
+      }
+    }
+    .search-right{
+      width: 378px;
+      background-color: @area-bg;
+      .search-item{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .item-tit{
+          width: 80px;
+          text-align: center;
+        }
+        .item-picker{
+          width: 288px !important;
+        }
+      }
+      .ant-calendar-range-picker-input{
+        font-size: 12px;
+        letter-spacing: -0.5px;
+      }
+      .ant-calendar-picker-input{
+        padding: 4px 2px;
+      }
+    }
+  }
+}

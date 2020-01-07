@@ -1,0 +1,171 @@
+// 功能列表
+.functional-list{
+  padding: 14px 20px 0;
+  .search-area{
+    padding: 20px 40px;
+    background-color: @area-bg;
+    .item-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .search-item{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        .tit{
+          width: 80px;
+        }
+        .ipt{
+          width: 200px;
+          color: @heading-color;
+        }
+      }
+    }
+  }
+
+  .functional-btns{
+    padding: 23px 0 10px;
+  }
+  .department-name{
+    margin: 0 5px 5px 0;
+  }
+}
+
+// 添加功能
+.functional-tips{
+  padding: 10px 0 0;
+  margin-bottom: 23px;
+}
+.add-functional-modal{
+  padding: 0 38px 30px;
+  margin-top: 23px;
+  .functional-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .tit{
+      margin-top: 6px;
+    }
+    .ipt{
+      width: 288px;
+      .ant-checkbox-group{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .ant-checkbox-group-item{
+          width: 50%;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+    .area{
+      min-height: 100px;
+    }
+  }
+  .bts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    .right{
+      margin-left: 60px;
+    }
+  }
+}
+
+// 权限列表
+.power-list{
+  padding: 14px 20px 0;
+  .search-area{
+    display: flex;
+    justify-content: space-between;
+    .item-row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .area-left{
+      width: 678px;
+      padding: 20px 20px 5px;
+      background-color: @area-bg;
+      .search-item{
+        display: flex;
+        align-items: center;
+        .tit{
+          width: 80px;
+          text-align: left;
+        }
+        .ipt{
+          width: 200px;
+          color: @heading-color;
+        }
+      }
+    }
+    .area-right{
+      width: 332px;
+      padding: 20px 0 0 40px;
+      background-color: @area-bg;
+      .search-item{
+        display: flex;
+        align-items: center;
+        .tit{
+          width: 70px;
+          text-align: left;
+        }
+        .ipt{
+          width: 200px;
+          color: @heading-color;
+        }
+      }
+    }
+  }
+  .functional-btns{
+    padding: 23px 0 10px;
+  }
+}
+
+// 添加权限
+.add-power-modal{
+  padding: 24px 37px;
+  .add-power-item{
+    display: flex;
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .tit{
+      width: 97px;
+      margin-top: 6px;
+    }
+    .ipt{
+      width: 288px;
+      color: @heading-color;
+    }
+    .ipt-box{
+      width: 288px;
+      color: @heading-color;
+      .ipt-item-1{
+        margin-bottom: 10px;
+      }
+      .ipt-item-2{
+        margin-bottom: 10px;
+      }
+      .ipt-item-3{
+      }
+    }
+  }
+  .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 38px;
+    .right{
+      margin-left: 60px;
+    }
+  }
+}

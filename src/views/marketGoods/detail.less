@@ -1,0 +1,182 @@
+.market-goods-detail{
+  padding: 20px;
+  .shop-info-wrap{
+    background-color: @area-bg;
+    .shop-info{
+      display: flex;
+      align-items: center;
+      height: 60px;
+      .info-item{
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        .tit{
+          width: 116px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  .txt{
+    color: @heading-color;
+    font-weight: 600;
+  }
+  .common-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    line-height: 36px;
+    border-bottom: 1px solid @split-color;
+    .tit{
+      font-size: 16px;
+      font-weight: 600;
+      color: @heading-color;
+    }
+    .btns{
+      display: flex;
+      align-items: center;
+      .self-btn{
+        min-width: 80px;
+        height: 24px;
+        border-radius: 12px;
+        color: #fff;
+        > span {
+          width: 100%;
+        }
+        &.recommend{
+          border: 1px solid #FA7F32;
+          background-color: #FA7F32;
+        }
+        &.stopsales{
+          margin-left: 30px;
+          border: 1px solid #F93450;
+          background-color: #F93450;
+        }
+        // &:hover{
+        //   border: 0 none !important;
+        // }
+        // &:active{
+        //   border: 0 none !important;
+        // }
+        // &:focus{
+        //   border: 0 none !important;
+        // }
+      }
+    }
+  }
+  .goods-info-wrap{
+    margin-top: 20px;
+    background-color: @area-bg;
+
+    .spu-sku{
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      border-bottom: 1px solid @split-color;
+      .spu-item{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        .tit{
+          width: 96px;
+          padding-left: 20px;
+        }
+      }
+      .sku-item{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-left: 100px;
+        .tit{
+          width: 76px;
+        }
+      }
+    }
+    .goods-cate{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 0 20px;
+      border-bottom: 1px solid @split-color;
+      .tit{
+        padding-left: 28px;
+        width: 96px;
+      }
+    }
+    .goods-title{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 0 20px;
+      border-bottom: 1px solid @split-color;
+      .tit{
+        width: 96px;
+      }
+    }
+    .goods-info{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 0 20px;
+      border-bottom: 1px solid @split-color;
+      .info-item{
+        display: flex;
+        align-items: center;
+        margin-right: 52px;
+        .tit{
+          width: 96px;
+          padding-left: 28px;
+        }
+      }
+    }
+  }
+
+  .img-text-wrap{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 12px;
+    .tit{
+      width: 116px;
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    .img-text{
+      flex: 1;
+      .img-text-item{
+        margin-bottom: 20px;
+        .desc{
+          line-height: 24px;
+          font-weight: 600;
+          color: @heading-color;
+        }
+        .img{
+          margin-top: 20px;
+          width: 140px;
+          height: 100px;
+          border-radius: 4px;
+          cursor: url('https://cdn1.showjoy.com/shop/images/20190614/O92WUPIL5DBY5OUFFNXG1560490633350.png'), auto;
+          &:hover{
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  .btns-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .back-btn{
+      width: 100px;
+      color: @primary-color;
+      border-color: @primary-color;
+    }
+    .lower-sales-btn{
+      width: 100px;
+      margin-left: 100px;
+    }
+  }
+}

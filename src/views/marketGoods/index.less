@@ -1,0 +1,113 @@
+.market-goods-wrap{
+  padding: 20px;
+  .goods-search-area{
+    padding-bottom: 20px;
+    background-color: @area-bg;
+    overflow: hidden;
+    .search-row{
+      display: flex;
+      margin-top: 20px;
+      .search-item{
+        display: flex;
+        align-items: center;
+        .item-tit{
+          width: 125px;
+          text-align: center;
+        }
+        .item-ipt{
+          width: 200px;
+        }
+        .goods-picker{
+          width: 350px;
+        }
+        .ant-calendar-range-picker-input{
+          letter-spacing: -0.2px;
+        }
+        .ant-calendar-picker-input{
+          padding: 4px 2px;
+        }
+      }
+    }
+  }
+  .market-tab{
+    margin-top: 15px;
+  }
+  .ant-tabs-extra-content{
+    display: flex;
+    line-height: 36px;
+  }
+  .head-btn{
+    margin-bottom: 6px;
+  }
+  .line-two{
+    width: 176px;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  }
+  .font-12{
+    font-size: 12px;
+    .price-pre{
+      color: #eeeeee;
+    }
+  }
+  .main-img{
+    width: 60px;
+    height: 60px;
+    cursor: url('https://cdn1.showjoy.com/shop/images/20190614/O92WUPIL5DBY5OUFFNXG1560490633350.png'), auto;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}
+.radios-wrap{
+  width: 100%;
+  padding: 25px 20px;
+  .radio-item{
+    display: block;
+    margin-bottom: 26px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .other-wrap{
+    position: relative;
+    width: 100%;
+    min-height: 28px;
+    margin-top: 6px;
+    .other-ipt{
+      padding-right: 48px;
+      width: 100%;
+    }
+    .other-len{
+      position: absolute;
+      right: 0;
+      top: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 72%;
+      border-left: 1px solid #eeeeee;
+      .len{
+        line-height: 100%;
+      }
+    }
+  }
+}
+.btns-wrap{
+  padding: 25px 0 30px;
+  text-align: center;
+  .left-btn{
+    border-color: @primary-color;
+    color: @primary-color;
+  }
+  .right-btn{
+    margin-left: 56px;
+  }
+}

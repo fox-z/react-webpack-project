@@ -1,0 +1,172 @@
+.login-wrap{
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  .logo-area{
+    width: 183px;
+    height: 64px;
+    margin: 20px auto;
+    background: url('../../images/login_logo.png') center center no-repeat;
+    background-size: 100% 100%;
+  }
+  .content-area-wrap{
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    background: url('../../images/login_bg.png') center center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    &::before{
+      content: '';
+      display: block;
+      padding-top: 54.7%;
+    }
+    .main-content{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1280px;
+      transform: translateX(-50%);
+    }
+  }
+  .login-area{
+    width: 440px;
+    height: 400px;
+    margin: 130px 0 0 780px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    .login-tit{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .tit-text{
+        font-size: 22px;
+        font-weight: 500;
+        color: @text-color;
+      }
+      .tit-btn{
+        width:100px;
+        height:28px;
+        line-height: 28px;
+        text-align: center;
+        color: #ffffff;
+        background: @primary-color;
+        box-shadow:0px 2px 4px 0px rgba(172,73,85,0.36);
+        border-radius:4px;
+      }
+    }
+    .login-tips{
+      height: 16px;
+      margin-top: 44px;
+      color: @error-color;
+      .error-icon{
+        margin-right: 5px;
+        font-size: 14px;
+        color: @error-color;
+      }
+    }
+    .account-wrap{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin-top: 10px;
+      border-bottom: 1px solid #eeeeee;
+      &.password{
+        margin-top: 26px;
+      }
+      &.error {
+        border-bottom: 1px solid @primary-color;
+      }
+      .accout-icon{
+        margin-right: 10px;
+        width: 16px;
+        height: 18px;
+        background: url('../../images/accout.png') center no-repeat;
+        background-size: 100% 100%;
+        &.lock-icon{
+          background: url('../../images/lock.png') center no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .login-ipt{
+        height: 100%;
+        width: 300px;
+        font-size: 14px;
+        border: none;
+        color: @heading-color;
+        &::placeholder{
+          color: @text-color-secondary;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      .close-icon{
+        cursor: pointer;
+        color: @text-color-secondary;
+      }
+    }
+  }
+  .slogan-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 60px 0 780px;
+    height: 20px;
+    .slogan-left{
+      width:106px;
+      height:2px;
+      background: linear-gradient(270deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+    .slogan-text{
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+    }
+    .slogan-right{
+      width:106px;
+      height:2px;
+      background: linear-gradient(270deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      transform: rotate(180deg);
+    }
+  }
+  .login-btn{
+    display: block;
+    width: 100%;
+    height: 36px !important;
+    line-height: 36px;
+    margin-top: 40px;
+    > span {
+      letter-spacing: 5px;
+    }
+  }
+  .dms-title{
+    padding: 20px 0;
+    font-size: 16px;
+    color: @text-color;
+    text-align: center;
+  }
+  .forget-password{
+    float: right;
+    margin-top: 20px;
+    text-align: right;
+    color: @edit-color;
+    font-size: 14px;
+  }
+}
+.tool-tip-wrap{
+  width: 162px;
+  color: @text-color;
+  line-height: 17px;
+  .tool-tip-bot{
+    margin-top: 20px;
+  }
+}
+.tool-tip-wrap-two{
+  width: 195px;
+  color: @text-color;
+  line-height: 17px;
+}
